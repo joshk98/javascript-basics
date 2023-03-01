@@ -1,61 +1,62 @@
-function negate(a) {
-  // your code here
+const negate = (a) => {
+  return !a;
 };
 
-function both(a, b) {
-  // your code here
+const both = (a, b) => {
+  return a && b;
 };
 
-function either(a, b) {
-  // your code here
+const either = (a, b) => {
+  return a || b;
 };
 
-function none(a, b) {
-  // your code here
+const none = (a, b) => {
+  return !(a || b);
 };
 
-function one(a, b) {
-  // your code here
+const one = (a, b) => {
+  return a !== b;
 };
 
-function truthiness(a) {
-  // your code here
+const truthiness = (a) => {
+  return Boolean(a);
 };
 
-function isEqual(a, b) {
-  // your code here
+const isEqual = (a, b) => {
+  return a === b;
 };
 
-function isGreaterThan(a, b) {
-  // your code here
+const isGreaterThan = (a, b) => {
+  return a > b;
 };
 
-function isLessThanOrEqualTo(a, b) {
-  // your code here
+const isLessThanOrEqualTo = (a, b) => {
+  return a <= b;
 };
 
-function isOdd(a) {
-  // your code here
+const isOdd = (a) => {
+  return a % 2 !== 0;
 };
 
-function isEven(a) {
-  // your code here
+const isEven = (a) => {
+  return a % 2 === 0;
 };
 
-function isSquare(a) {
-  // your code here
+const isSquare = (a) => {
+  return Math.sqrt(a) % 1 === 0;
 };
 
-function startsWith(char, string) {
-  // your code here
+const startsWith = (char, string) => {
+  return string.charAt(0) === char;
 };
 
-function containsVowels(string) {
-  // your code here
+const containsVowels = (string) => {
+  const vowels = /[aeiou]/i;
+  return vowels.test(string);
 };
 
-function isLowerCase(string) {
-  // your code here
+const isLowerCase = (string) => {
+  return string === string.toLowerCase();
 };
 
 module.exports = {
