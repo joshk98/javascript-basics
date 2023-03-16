@@ -18,8 +18,7 @@ const addToArray = (element, array) => {
 };
 
 const addToArray2 = (element, array) => {
-  const array2 = [...array, element];
-  return array2;
+  return [...array, element]
 };
 
 const removeNthElement = (index, array) => {
@@ -27,8 +26,7 @@ const removeNthElement = (index, array) => {
 };
 
 const numbersToStrings = numbers => {
-  const strings = numbers.map(String);
-  return strings;
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
@@ -45,7 +43,7 @@ const reverseWordsInArray = strings => {
 };
 
 const onlyEven = numbers => {
-  return numbers.filter(byNum => byNum % 2 === 0);
+  return numbers.filter(number => number % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
@@ -64,7 +62,7 @@ const removeSpaces = string => {
 };
 
 const sumNumbers = numbers => {
-  return numbers.reduce((a, b) => a + b, 0);
+  return numbers.reduce((acc, curr) => acc + curr, 0);
 };
 
 const sortByLastLetter = strings => {
